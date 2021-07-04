@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- 主機: 127.0.0.1
+- 產生時間： 2021-04-02 19:24:18
+- 伺服器版本: 10.1.37-MariaDB
+- PHP 版本： 5.6.40
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="mydb" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="member_table">
+                CREATE TABLE `member_table` (
+                  `NO` int(6) NOT NULL,
+                  `username` char(20) NOT NULL,
+                  `password` char(20) NOT NULL,
+                  `telephone` char(12) NOT NULL,
+                  `address` text NOT NULL,
+                  `other` text NOT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - 資料庫： 'mydb'
+    -->
+    <database name="mydb">
+        <!-- 資料表 member_table -->
+    </database>
+</pma_xml_export>
